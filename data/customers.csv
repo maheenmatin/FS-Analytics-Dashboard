@@ -1,0 +1,501 @@
+customer_id,signup_date,region,segment,status,risk_score,kyc_completed,credit_limit
+10001,2023-06-25,Scotland,Retail,Active,0.325,True,500
+10002,2023-07-16,NI,SME,Active,0.633,True,1000
+10003,2024-06-21,NI,SME,Active,0.288,True,1000
+10004,2024-05-17,South East,Retail,Active,0.228,False,500
+10005,2024-08-02,London,Retail,Churned,0.373,True,5000
+10006,2023-07-31,North West,SME,Active,0.608,True,2000
+10007,2024-09-07,North West,Retail,Active,0.476,True,1000
+10008,2023-12-15,Midlands,Retail,Active,0.511,True,2000
+10009,2023-07-05,London,SME,Active,0.541,True,10000
+10010,2024-02-03,Midlands,Retail,Active,1.0,True,2000
+10011,2024-06-19,Wales,Retail,Active,0.232,True,1000
+10012,2024-08-07,Wales,Retail,Churned,0.28,True,2000
+10013,2023-12-12,NI,Retail,Active,0.373,True,2000
+10014,2024-01-02,Wales,Retail,Active,0.511,True,2000
+10015,2024-07-08,NI,Retail,Active,0.351,True,500
+10016,2023-06-17,London,SME,Active,0.185,True,500
+10017,2023-03-10,Wales,Retail,Active,0.514,True,1000
+10018,2024-03-08,London,Retail,Churned,0.294,True,1000
+10019,2024-01-27,South East,Retail,Active,0.424,True,5000
+10020,2024-05-27,South East,Retail,Active,0.467,True,500
+10021,2023-03-17,NI,Retail,Active,0.433,True,5000
+10022,2023-09-08,Midlands,Retail,Active,0.354,True,500
+10023,2023-01-07,South East,SME,Active,0.696,True,1000
+10024,2024-03-20,South East,Retail,Active,0.606,True,1000
+10025,2023-02-14,Wales,Retail,Active,0.388,True,5000
+10026,2023-11-22,Scotland,SME,Active,0.497,True,5000
+10027,2023-06-02,London,SME,Active,0.646,True,500
+10028,2023-07-03,London,Retail,Active,0.539,False,500
+10029,2023-04-23,South East,Retail,Active,0.473,True,1000
+10030,2023-07-09,London,Retail,Churned,0.421,True,1000
+10031,2023-10-18,North West,SME,Active,0.508,True,10000
+10032,2023-11-09,London,Retail,Active,0.448,True,2000
+10033,2023-07-21,North West,Retail,Active,0.812,True,1000
+10034,2024-04-07,Wales,Retail,Churned,0.262,True,2000
+10035,2024-07-04,Scotland,SME,Active,0.285,True,2000
+10036,2024-05-09,London,Retail,Active,0.275,True,5000
+10037,2023-05-18,London,Retail,Active,0.336,True,5000
+10038,2024-04-28,South East,Retail,Active,0.35,True,1000
+10039,2023-07-15,Midlands,Retail,Active,0.3,True,2000
+10040,2023-03-14,South East,Retail,Active,0.411,False,10000
+10041,2023-09-15,London,Retail,Churned,0.297,True,1000
+10042,2024-02-05,South East,Premier,Active,0.326,True,2000
+10043,2024-01-10,London,SME,Churned,0.641,False,1000
+10044,2023-12-16,Wales,Retail,Active,0.41,True,1000
+10045,2024-08-27,Midlands,Retail,Active,0.514,False,500
+10046,2024-08-06,South East,Retail,Active,0.407,False,500
+10047,2023-10-07,Midlands,Retail,Churned,0.437,True,1000
+10048,2024-06-06,North West,SME,Active,0.581,True,1000
+10049,2024-03-24,North West,Retail,Churned,0.577,True,2000
+10050,2023-11-14,South East,Premier,Active,0.411,True,2000
+10051,2024-01-27,North West,SME,Active,0.52,True,2000
+10052,2023-06-01,NI,Retail,Churned,0.506,True,2000
+10053,2023-04-03,Scotland,Retail,Active,0.463,True,2000
+10054,2023-08-13,Scotland,Retail,Active,0.464,True,1000
+10055,2023-12-23,London,Retail,Churned,0.472,True,2000
+10056,2024-04-26,North West,SME,Active,0.429,True,2000
+10057,2024-08-02,South East,Retail,Active,0.523,True,5000
+10058,2023-08-08,London,SME,Active,0.408,True,1000
+10059,2024-04-26,South East,Retail,Active,0.483,True,5000
+10060,2023-01-20,London,SME,Active,0.347,True,500
+10061,2024-05-31,London,SME,Active,0.344,True,500
+10062,2023-02-03,Scotland,SME,Churned,0.506,True,2000
+10063,2023-05-04,Midlands,Retail,Active,0.566,True,500
+10064,2023-10-14,Midlands,Retail,Churned,0.065,True,5000
+10065,2024-02-20,London,Retail,Churned,0.532,True,1000
+10066,2023-05-11,London,Retail,Active,0.492,True,1000
+10067,2023-03-25,London,SME,Churned,0.219,True,5000
+10068,2024-02-07,London,Retail,Churned,0.327,True,2000
+10069,2023-01-22,London,SME,Active,0.518,True,500
+10070,2024-08-02,NI,Retail,Active,0.597,True,5000
+10071,2023-07-23,Wales,Retail,Churned,0.285,True,500
+10072,2023-02-17,London,SME,Churned,0.466,True,2000
+10073,2024-06-08,London,Premier,Active,0.703,False,5000
+10074,2023-12-16,NI,Retail,Active,0.804,True,5000
+10075,2023-04-18,North West,SME,Active,0.665,True,1000
+10076,2024-01-29,South East,Retail,Active,0.656,True,5000
+10077,2024-09-14,North West,Retail,Active,0.606,True,2000
+10078,2023-10-04,London,Retail,Active,0.846,False,500
+10079,2023-11-06,North West,Retail,Active,0.744,True,10000
+10080,2023-02-05,Midlands,Retail,Active,0.446,True,2000
+10081,2023-09-18,North West,Premier,Active,0.427,True,1000
+10082,2024-04-01,Scotland,SME,Active,0.377,True,1000
+10083,2024-04-19,London,Retail,Churned,0.558,True,500
+10084,2024-07-20,Midlands,Retail,Active,0.542,True,2000
+10085,2024-07-09,NI,Retail,Active,0.429,True,2000
+10086,2023-08-04,London,SME,Churned,0.526,True,500
+10087,2024-03-10,North West,Retail,Churned,0.091,True,1000
+10088,2023-02-09,Midlands,Retail,Active,0.352,True,1000
+10089,2023-05-12,South East,Retail,Active,0.712,True,5000
+10090,2024-02-18,NI,Retail,Active,0.207,False,500
+10091,2024-04-05,North West,Retail,Churned,0.467,True,2000
+10092,2024-07-20,North West,Retail,Active,0.47,True,2000
+10093,2024-01-09,Wales,SME,Active,0.5,True,2000
+10094,2023-02-14,London,Retail,Active,0.549,True,1000
+10095,2024-05-10,Wales,Retail,Active,0.156,True,500
+10096,2023-07-17,London,Retail,Active,0.526,True,500
+10097,2023-04-11,South East,Retail,Active,0.526,True,500
+10098,2023-06-30,North West,Premier,Active,0.444,True,5000
+10099,2023-06-19,North West,Retail,Active,0.579,True,1000
+10100,2023-01-30,London,SME,Active,0.461,True,1000
+10101,2023-10-10,South East,Retail,Active,0.0,True,1000
+10102,2023-07-10,South East,SME,Active,0.398,True,500
+10103,2023-01-13,NI,Retail,Active,0.189,True,1000
+10104,2024-05-03,Wales,Retail,Churned,0.372,True,10000
+10105,2024-03-19,North West,SME,Active,0.266,True,1000
+10106,2023-04-17,Wales,SME,Active,0.548,True,1000
+10107,2024-09-14,Wales,Retail,Active,0.616,True,2000
+10108,2024-05-12,South East,Retail,Active,0.553,True,1000
+10109,2023-12-16,London,Retail,Active,0.467,True,500
+10110,2024-05-01,Midlands,Retail,Active,0.807,True,1000
+10111,2023-08-23,South East,Premier,Active,0.502,True,5000
+10112,2024-06-13,London,SME,Active,0.426,True,500
+10113,2023-01-06,NI,Retail,Active,0.805,True,500
+10114,2023-02-19,NI,Retail,Churned,0.551,True,2000
+10115,2024-03-14,North West,Retail,Active,0.559,True,500
+10116,2023-11-29,Midlands,Retail,Active,0.669,True,500
+10117,2024-09-09,Midlands,Retail,Active,0.378,True,500
+10118,2023-07-02,Wales,Retail,Active,0.472,True,5000
+10119,2024-02-26,North West,Premier,Active,0.468,True,5000
+10120,2024-08-22,North West,Retail,Active,0.642,True,5000
+10121,2023-09-18,London,Retail,Active,0.738,True,1000
+10122,2024-04-20,London,SME,Active,0.473,True,5000
+10123,2024-08-11,North West,Retail,Churned,0.537,True,500
+10124,2023-08-22,London,Retail,Active,0.21,True,1000
+10125,2023-11-28,London,Retail,Active,0.18,True,2000
+10126,2023-08-14,South East,SME,Active,0.795,True,1000
+10127,2024-04-14,Scotland,Retail,Active,0.464,True,10000
+10128,2023-03-27,London,Retail,Active,0.321,True,2000
+10129,2024-04-21,Wales,Retail,Active,0.44,True,1000
+10130,2023-09-05,Midlands,SME,Active,0.372,False,2000
+10131,2023-07-03,Midlands,SME,Active,0.275,True,2000
+10132,2023-03-18,Wales,Retail,Active,0.428,True,500
+10133,2023-03-27,London,SME,Churned,0.366,True,1000
+10134,2023-08-19,London,Retail,Active,0.42,True,1000
+10135,2023-11-12,Wales,Retail,Active,0.501,True,5000
+10136,2024-07-29,Wales,Retail,Churned,0.546,True,5000
+10137,2024-02-05,London,Retail,Active,0.647,False,1000
+10138,2023-02-05,Scotland,Retail,Active,0.571,True,10000
+10139,2024-08-12,London,Retail,Active,0.679,True,500
+10140,2023-10-16,London,Premier,Active,0.189,True,1000
+10141,2024-09-21,London,Retail,Active,0.323,True,500
+10142,2023-06-11,South East,Retail,Churned,0.375,True,1000
+10143,2023-02-15,South East,SME,Active,0.65,True,5000
+10144,2024-09-20,Wales,Retail,Active,0.348,True,2000
+10145,2024-04-20,South East,Retail,Active,0.779,True,500
+10146,2024-02-03,London,Retail,Active,0.517,True,500
+10147,2023-02-15,London,Retail,Active,0.333,True,2000
+10148,2023-02-12,London,Retail,Active,0.376,True,1000
+10149,2023-10-18,London,Retail,Active,0.21,True,5000
+10150,2023-04-06,South East,Retail,Active,0.599,False,2000
+10151,2023-07-03,North West,Retail,Active,0.384,True,2000
+10152,2023-08-19,London,Retail,Active,0.749,True,2000
+10153,2023-09-23,South East,Retail,Active,0.672,True,2000
+10154,2023-09-27,London,SME,Active,0.351,True,500
+10155,2023-12-08,Midlands,Retail,Churned,0.608,True,5000
+10156,2023-01-02,South East,Retail,Active,0.35,True,2000
+10157,2023-10-15,London,SME,Churned,0.364,True,2000
+10158,2023-07-28,North West,Retail,Active,0.464,True,500
+10159,2024-07-14,London,SME,Active,0.744,False,500
+10160,2024-05-12,South East,Retail,Active,0.786,True,2000
+10161,2023-06-11,London,SME,Churned,0.483,True,5000
+10162,2023-09-13,Scotland,SME,Active,0.333,True,1000
+10163,2023-12-05,London,Retail,Churned,0.822,True,2000
+10164,2024-07-30,NI,Retail,Active,0.444,True,500
+10165,2024-04-06,South East,Retail,Active,0.548,True,500
+10166,2023-09-24,London,Retail,Active,0.255,True,2000
+10167,2024-03-12,Midlands,Retail,Active,0.336,True,10000
+10168,2024-05-21,Midlands,Retail,Active,0.737,True,1000
+10169,2024-06-23,Wales,Retail,Active,0.173,True,1000
+10170,2023-06-06,London,Retail,Active,0.478,True,1000
+10171,2023-01-09,Scotland,SME,Active,0.437,True,2000
+10172,2024-04-26,Scotland,Retail,Active,0.0,True,1000
+10173,2024-09-04,South East,Premier,Churned,0.741,True,1000
+10174,2024-03-04,South East,Retail,Active,0.41,True,2000
+10175,2023-10-26,Midlands,Retail,Churned,0.6,True,500
+10176,2023-12-15,London,SME,Churned,0.793,True,5000
+10177,2024-06-03,Wales,Retail,Active,0.593,True,2000
+10178,2023-05-24,Midlands,Retail,Active,0.286,True,10000
+10179,2023-07-30,Scotland,Retail,Active,0.694,True,5000
+10180,2023-08-20,South East,SME,Active,0.737,True,2000
+10181,2024-03-24,North West,Retail,Active,0.703,True,1000
+10182,2023-02-14,London,SME,Active,0.4,True,2000
+10183,2024-06-05,South East,Retail,Active,0.558,True,2000
+10184,2024-03-16,Midlands,Retail,Active,0.303,True,1000
+10185,2023-06-26,NI,Retail,Active,0.516,True,5000
+10186,2024-03-03,London,Premier,Active,0.379,True,1000
+10187,2024-06-01,London,SME,Churned,0.282,True,10000
+10188,2023-05-25,London,Retail,Churned,0.785,True,2000
+10189,2023-01-12,South East,Retail,Active,0.462,True,5000
+10190,2023-06-10,Scotland,Premier,Active,0.824,True,5000
+10191,2024-07-02,London,Retail,Active,0.474,True,2000
+10192,2023-03-11,North West,Retail,Active,0.427,True,5000
+10193,2023-12-30,North West,Retail,Churned,0.462,True,2000
+10194,2024-08-28,Scotland,Retail,Active,0.595,True,1000
+10195,2023-02-19,London,Retail,Active,0.591,True,10000
+10196,2024-01-02,London,Retail,Active,0.698,True,2000
+10197,2024-05-05,North West,Retail,Active,0.679,True,2000
+10198,2024-03-12,South East,Retail,Active,0.734,True,10000
+10199,2023-04-03,South East,Retail,Churned,0.561,True,2000
+10200,2024-05-10,Scotland,Retail,Active,0.451,True,500
+10201,2024-07-13,Midlands,Retail,Active,0.624,True,2000
+10202,2024-04-06,London,Retail,Churned,0.477,True,2000
+10203,2023-07-31,North West,Retail,Active,0.573,True,2000
+10204,2023-04-16,Scotland,SME,Active,0.382,True,10000
+10205,2023-03-19,Wales,Retail,Active,0.471,True,2000
+10206,2024-06-20,London,Retail,Active,0.331,True,10000
+10207,2023-03-09,Scotland,Retail,Active,0.966,True,2000
+10208,2024-07-15,London,SME,Churned,0.952,True,10000
+10209,2024-05-05,Midlands,Retail,Active,0.62,True,1000
+10210,2024-02-21,North West,Retail,Active,0.436,True,500
+10211,2023-02-03,NI,Retail,Active,0.269,False,2000
+10212,2023-11-28,Midlands,SME,Active,0.466,True,5000
+10213,2023-03-10,London,SME,Active,0.324,True,5000
+10214,2023-08-19,Midlands,SME,Churned,0.526,True,2000
+10215,2024-08-30,London,Retail,Churned,0.323,True,1000
+10216,2024-07-27,Scotland,Retail,Active,0.592,True,1000
+10217,2023-03-20,London,Retail,Active,0.316,True,500
+10218,2024-03-03,South East,Retail,Active,0.377,True,1000
+10219,2024-08-11,Midlands,SME,Active,0.151,True,1000
+10220,2024-02-05,London,Retail,Churned,0.757,True,10000
+10221,2024-01-05,Midlands,Retail,Active,0.128,True,2000
+10222,2024-02-15,Midlands,Retail,Churned,0.16,True,2000
+10223,2024-01-16,Midlands,Retail,Churned,0.239,True,1000
+10224,2024-06-04,Wales,SME,Active,0.623,True,500
+10225,2024-08-29,South East,Retail,Churned,0.293,True,1000
+10226,2024-02-11,London,Retail,Active,0.347,True,2000
+10227,2023-07-04,London,Retail,Churned,0.563,True,2000
+10228,2023-07-01,South East,Retail,Active,0.319,True,10000
+10229,2024-06-30,London,Retail,Active,0.431,True,1000
+10230,2023-09-18,Midlands,Retail,Churned,0.535,False,2000
+10231,2023-02-14,London,Retail,Active,0.57,True,2000
+10232,2023-11-08,London,Premier,Active,0.564,True,2000
+10233,2023-10-04,Wales,SME,Active,0.557,False,500
+10234,2024-03-09,Scotland,Retail,Churned,0.498,True,5000
+10235,2023-10-02,London,Retail,Active,0.9,True,2000
+10236,2023-07-04,South East,Retail,Active,0.145,True,2000
+10237,2023-05-02,Scotland,Retail,Active,0.686,True,500
+10238,2024-02-11,Midlands,SME,Active,0.406,True,5000
+10239,2023-01-19,London,SME,Active,0.505,True,2000
+10240,2023-09-05,South East,Retail,Active,1.0,True,500
+10241,2023-01-06,Scotland,SME,Active,0.776,True,2000
+10242,2024-04-24,London,Retail,Active,0.418,True,500
+10243,2023-06-07,NI,Retail,Active,0.535,True,500
+10244,2024-02-05,North West,Retail,Active,0.386,True,2000
+10245,2023-09-04,London,Retail,Active,0.504,True,2000
+10246,2023-03-10,Scotland,SME,Active,0.406,True,1000
+10247,2023-08-27,London,Premier,Active,0.512,True,500
+10248,2023-04-13,South East,SME,Active,0.319,True,1000
+10249,2024-03-26,North West,Retail,Active,0.357,True,500
+10250,2023-03-30,London,Retail,Active,0.482,True,500
+10251,2023-04-02,Wales,Retail,Churned,0.452,True,500
+10252,2024-03-15,Midlands,Retail,Active,0.659,True,2000
+10253,2023-01-17,London,Retail,Active,0.331,True,2000
+10254,2024-05-09,London,Retail,Active,0.538,False,1000
+10255,2024-01-16,London,SME,Churned,0.343,True,2000
+10256,2023-04-15,North West,Retail,Active,0.487,True,500
+10257,2024-08-28,London,Retail,Active,0.363,True,5000
+10258,2023-03-15,North West,Retail,Active,0.462,True,2000
+10259,2024-03-04,Scotland,Retail,Churned,0.945,True,500
+10260,2023-10-23,Wales,Retail,Active,0.274,True,1000
+10261,2023-07-26,London,SME,Churned,0.606,True,1000
+10262,2023-07-10,South East,Retail,Active,0.378,True,5000
+10263,2024-01-22,South East,Retail,Churned,0.524,True,2000
+10264,2024-07-03,South East,Retail,Active,0.363,True,500
+10265,2023-12-09,South East,Retail,Active,0.58,True,2000
+10266,2023-08-30,South East,Retail,Churned,0.718,True,500
+10267,2023-09-23,Scotland,SME,Active,0.604,True,1000
+10268,2024-06-11,South East,SME,Churned,0.506,False,5000
+10269,2023-07-18,South East,SME,Active,0.721,True,500
+10270,2024-04-13,South East,Retail,Active,0.399,True,2000
+10271,2023-08-01,London,Retail,Active,0.281,True,1000
+10272,2024-06-29,Midlands,SME,Active,0.416,True,500
+10273,2024-06-17,South East,SME,Active,0.469,True,5000
+10274,2023-09-25,Wales,Retail,Active,0.475,True,2000
+10275,2023-10-31,Scotland,Retail,Active,0.372,True,1000
+10276,2023-05-20,London,Retail,Active,0.581,True,500
+10277,2023-02-06,London,Retail,Active,0.352,True,1000
+10278,2024-04-01,Scotland,Retail,Active,0.92,True,2000
+10279,2024-02-10,North West,SME,Active,0.575,True,5000
+10280,2023-05-07,London,Retail,Active,0.231,True,1000
+10281,2023-10-03,Midlands,Premier,Active,0.464,True,500
+10282,2023-10-29,South East,Retail,Active,0.096,True,500
+10283,2024-03-10,Scotland,SME,Active,0.642,True,500
+10284,2023-08-16,Scotland,Retail,Active,0.318,True,2000
+10285,2024-06-29,Wales,Retail,Active,0.215,True,500
+10286,2024-03-19,Midlands,Retail,Active,0.461,True,2000
+10287,2024-08-16,Wales,SME,Active,0.226,True,500
+10288,2023-04-14,South East,Retail,Churned,0.56,True,1000
+10289,2024-08-07,South East,Retail,Active,0.393,True,2000
+10290,2023-06-02,London,Retail,Active,0.662,True,2000
+10291,2023-09-26,Wales,SME,Active,0.595,True,500
+10292,2023-08-15,London,Retail,Active,0.349,True,500
+10293,2023-07-15,North West,Premier,Active,0.572,True,500
+10294,2023-05-05,North West,Retail,Active,0.616,True,1000
+10295,2024-08-31,Scotland,Retail,Active,0.761,True,1000
+10296,2023-12-04,South East,Premier,Active,0.255,True,2000
+10297,2023-05-10,London,Retail,Active,0.73,True,500
+10298,2024-05-11,South East,Retail,Churned,0.705,True,500
+10299,2024-07-09,London,Retail,Churned,0.528,True,1000
+10300,2023-06-28,South East,SME,Active,0.98,True,2000
+10301,2023-07-14,Midlands,Retail,Active,0.487,False,2000
+10302,2023-04-22,London,Retail,Active,0.49,True,500
+10303,2023-05-17,NI,Retail,Active,0.293,True,1000
+10304,2024-07-28,North West,Retail,Churned,0.58,True,2000
+10305,2023-03-26,South East,SME,Active,0.651,True,1000
+10306,2023-11-10,Scotland,Retail,Active,0.425,True,5000
+10307,2024-01-19,London,SME,Active,0.271,True,500
+10308,2024-04-03,South East,SME,Active,0.823,True,2000
+10309,2023-06-10,Wales,SME,Active,0.383,True,2000
+10310,2023-09-12,London,SME,Active,0.774,True,10000
+10311,2023-01-29,Midlands,Retail,Active,0.568,True,500
+10312,2023-03-21,London,Retail,Active,0.607,True,2000
+10313,2024-03-05,North West,SME,Active,0.511,True,1000
+10314,2024-09-06,Midlands,Retail,Active,0.173,True,2000
+10315,2023-11-26,London,Retail,Active,0.48,True,1000
+10316,2023-02-11,South East,SME,Active,0.611,True,2000
+10317,2023-10-20,North West,SME,Active,0.619,True,500
+10318,2024-02-29,North West,Retail,Active,0.384,True,5000
+10319,2023-12-21,London,Retail,Active,0.876,True,1000
+10320,2023-03-01,South East,SME,Active,0.56,True,5000
+10321,2023-12-02,NI,SME,Active,0.476,True,1000
+10322,2023-05-12,South East,Retail,Churned,0.327,False,500
+10323,2023-06-15,Scotland,Retail,Active,0.206,True,1000
+10324,2024-01-06,London,SME,Churned,0.369,True,2000
+10325,2023-03-28,North West,SME,Active,0.532,True,5000
+10326,2023-01-15,North West,Retail,Active,0.472,True,1000
+10327,2023-06-28,North West,Retail,Active,0.576,True,1000
+10328,2023-12-31,Midlands,Retail,Active,0.789,True,5000
+10329,2023-10-21,Scotland,Retail,Active,0.647,True,2000
+10330,2023-11-10,Midlands,Retail,Active,0.252,True,1000
+10331,2024-05-09,Scotland,Retail,Active,0.773,True,2000
+10332,2023-12-10,Wales,SME,Active,0.701,True,1000
+10333,2024-08-04,South East,SME,Active,0.458,True,1000
+10334,2023-09-25,Scotland,Retail,Active,0.404,True,1000
+10335,2024-06-22,North West,SME,Churned,0.239,True,500
+10336,2024-05-16,London,Retail,Active,0.469,True,500
+10337,2023-10-18,London,Retail,Active,0.53,True,500
+10338,2024-08-15,Scotland,Retail,Active,0.397,True,2000
+10339,2023-07-15,Midlands,Retail,Active,0.479,True,2000
+10340,2024-05-31,London,Retail,Active,0.454,True,1000
+10341,2024-09-08,North West,SME,Active,0.485,True,5000
+10342,2023-05-16,London,Retail,Active,0.41,True,500
+10343,2023-08-23,South East,Retail,Active,0.494,True,2000
+10344,2024-09-16,North West,Retail,Active,0.817,True,2000
+10345,2023-09-16,Midlands,Retail,Active,0.729,True,500
+10346,2023-03-14,London,Retail,Active,0.513,False,5000
+10347,2024-05-31,London,Retail,Active,0.301,True,2000
+10348,2024-05-27,North West,Retail,Active,0.285,True,1000
+10349,2024-09-17,Scotland,Retail,Active,0.384,False,1000
+10350,2024-06-16,Scotland,Retail,Active,0.576,True,2000
+10351,2024-04-22,South East,Retail,Active,0.463,True,1000
+10352,2024-06-27,North West,Retail,Active,0.337,True,500
+10353,2024-01-04,Midlands,Premier,Churned,0.216,True,1000
+10354,2024-07-15,Wales,SME,Active,0.348,True,5000
+10355,2024-01-04,North West,SME,Active,0.595,True,1000
+10356,2023-08-23,Wales,Retail,Active,0.439,True,500
+10357,2023-05-31,South East,Retail,Active,0.198,True,5000
+10358,2023-04-25,London,Retail,Active,0.357,True,1000
+10359,2023-06-12,South East,SME,Churned,0.59,True,500
+10360,2023-03-26,Midlands,Retail,Active,0.575,True,2000
+10361,2023-03-21,Wales,Retail,Active,0.474,True,500
+10362,2024-02-09,North West,Retail,Active,0.314,True,2000
+10363,2024-02-06,Midlands,SME,Active,0.614,True,2000
+10364,2024-01-30,London,Retail,Churned,0.359,True,500
+10365,2023-01-01,North West,SME,Active,0.416,True,1000
+10366,2023-08-15,South East,Retail,Active,0.262,True,2000
+10367,2023-04-30,South East,Retail,Active,0.645,True,500
+10368,2023-04-29,London,SME,Active,0.635,True,5000
+10369,2023-06-06,Midlands,Retail,Active,0.514,True,2000
+10370,2024-03-01,Midlands,SME,Active,0.591,True,500
+10371,2023-06-23,Midlands,Retail,Churned,0.22,True,2000
+10372,2024-03-20,Scotland,Retail,Churned,0.59,True,2000
+10373,2023-08-03,South East,Retail,Active,0.193,True,1000
+10374,2023-03-29,Scotland,SME,Active,0.434,True,2000
+10375,2024-04-21,North West,Retail,Churned,0.424,True,1000
+10376,2023-09-01,Wales,Premier,Active,0.372,True,1000
+10377,2024-01-12,South East,Retail,Active,0.697,True,1000
+10378,2023-01-12,Midlands,Retail,Active,0.981,True,2000
+10379,2024-02-11,London,Retail,Active,0.118,True,500
+10380,2023-04-04,London,Retail,Active,0.56,True,2000
+10381,2023-12-26,Wales,Premier,Active,0.687,True,500
+10382,2023-11-07,South East,Retail,Active,0.468,True,500
+10383,2024-01-28,London,Retail,Active,0.618,True,5000
+10384,2023-04-01,Midlands,Retail,Active,0.269,True,500
+10385,2023-05-26,Wales,Retail,Active,0.369,True,2000
+10386,2023-05-25,Scotland,SME,Active,0.703,True,1000
+10387,2024-08-06,NI,Retail,Active,0.709,False,10000
+10388,2023-02-26,Wales,Retail,Active,0.487,True,10000
+10389,2023-09-03,South East,Retail,Active,0.689,True,1000
+10390,2023-06-24,London,Retail,Active,0.67,True,5000
+10391,2023-03-09,London,SME,Active,0.623,True,5000
+10392,2023-08-29,London,Retail,Active,0.819,True,500
+10393,2023-10-20,Midlands,Retail,Active,0.611,True,1000
+10394,2023-02-01,Wales,SME,Active,0.26,True,500
+10395,2023-11-01,London,SME,Churned,0.752,True,500
+10396,2024-07-06,Scotland,Retail,Active,0.27,True,1000
+10397,2023-07-07,Scotland,Premier,Churned,0.575,True,1000
+10398,2023-09-13,Midlands,Retail,Active,0.324,True,1000
+10399,2023-11-17,London,SME,Active,0.39,False,500
+10400,2023-01-29,London,SME,Active,0.685,True,1000
+10401,2023-01-08,Midlands,Retail,Active,0.306,True,5000
+10402,2024-07-09,Midlands,Retail,Active,0.45,True,1000
+10403,2023-12-13,South East,Retail,Active,0.421,True,2000
+10404,2023-05-14,South East,SME,Active,0.267,True,500
+10405,2023-11-29,London,Retail,Churned,0.509,True,2000
+10406,2023-08-02,NI,Retail,Active,0.164,False,2000
+10407,2024-08-24,Scotland,Retail,Active,0.42,True,5000
+10408,2023-03-31,NI,Retail,Active,0.203,True,500
+10409,2024-01-14,Scotland,SME,Active,0.501,True,2000
+10410,2023-01-22,South East,Retail,Active,0.412,True,1000
+10411,2024-09-06,Scotland,Retail,Churned,0.655,True,1000
+10412,2023-04-18,London,Retail,Active,0.539,True,1000
+10413,2024-01-12,Midlands,Retail,Active,0.425,True,5000
+10414,2023-06-15,London,Retail,Active,0.538,True,1000
+10415,2024-01-18,South East,SME,Churned,0.734,True,2000
+10416,2024-08-03,Wales,Retail,Active,0.378,True,500
+10417,2024-02-18,South East,Retail,Active,0.475,True,10000
+10418,2023-05-31,Wales,Retail,Active,0.512,True,5000
+10419,2023-02-02,North West,Retail,Active,0.499,True,2000
+10420,2024-04-15,South East,SME,Churned,0.413,True,1000
+10421,2023-01-11,London,Retail,Churned,0.301,True,1000
+10422,2023-11-30,London,Retail,Churned,0.471,True,1000
+10423,2024-07-04,North West,Retail,Active,0.352,True,2000
+10424,2023-12-26,Scotland,Retail,Active,0.269,True,1000
+10425,2024-09-16,London,Retail,Active,0.376,True,5000
+10426,2024-04-09,North West,Retail,Churned,0.648,True,1000
+10427,2024-05-27,NI,Retail,Churned,0.58,True,5000
+10428,2023-03-24,South East,Retail,Active,0.572,True,1000
+10429,2023-09-16,Wales,Retail,Active,0.61,True,500
+10430,2023-01-15,Scotland,Retail,Churned,0.421,True,500
+10431,2023-11-19,North West,Retail,Active,0.464,True,1000
+10432,2023-10-15,Midlands,Premier,Active,0.371,True,5000
+10433,2023-03-19,London,Retail,Churned,0.447,True,5000
+10434,2024-04-21,North West,Premier,Active,0.38,True,2000
+10435,2023-06-19,Scotland,Retail,Active,0.672,True,1000
+10436,2023-06-04,London,SME,Churned,0.357,True,500
+10437,2024-09-07,London,Retail,Churned,0.412,True,1000
+10438,2023-12-07,London,Retail,Active,0.676,True,2000
+10439,2024-06-19,London,Retail,Active,0.544,True,500
+10440,2023-12-15,London,SME,Active,0.485,False,1000
+10441,2024-05-20,Scotland,Retail,Active,0.482,True,1000
+10442,2024-09-07,South East,Retail,Active,0.276,True,2000
+10443,2024-07-08,North West,Retail,Active,0.812,True,2000
+10444,2023-02-17,South East,Retail,Active,0.682,True,500
+10445,2024-03-03,South East,Retail,Active,0.417,True,1000
+10446,2024-08-19,North West,Retail,Active,0.343,True,5000
+10447,2023-07-20,Scotland,Retail,Active,0.579,True,5000
+10448,2023-12-10,London,SME,Active,0.392,True,1000
+10449,2024-01-17,South East,Retail,Churned,0.643,True,5000
+10450,2024-06-23,Midlands,Retail,Active,0.601,True,500
+10451,2023-10-19,NI,Retail,Active,0.441,True,1000
+10452,2023-07-26,London,SME,Churned,0.491,True,2000
+10453,2023-05-31,South East,Retail,Active,0.787,True,500
+10454,2024-09-20,North West,Retail,Active,0.346,True,1000
+10455,2024-08-24,London,Premier,Active,0.515,True,5000
+10456,2023-04-28,Midlands,Retail,Churned,0.637,True,500
+10457,2024-06-26,NI,Retail,Active,0.49,True,500
+10458,2023-04-17,London,Retail,Active,0.486,True,2000
+10459,2024-08-11,North West,SME,Active,0.563,True,2000
+10460,2024-03-17,London,Retail,Active,0.454,True,500
+10461,2023-09-06,North West,SME,Churned,0.704,True,1000
+10462,2024-03-19,NI,Retail,Active,0.446,False,1000
+10463,2024-08-23,North West,Retail,Churned,0.31,True,500
+10464,2023-12-09,London,Retail,Churned,0.987,True,2000
+10465,2023-06-05,South East,SME,Churned,0.384,True,500
+10466,2024-01-22,Midlands,Retail,Active,0.615,True,2000
+10467,2024-02-07,Scotland,Retail,Active,0.578,True,2000
+10468,2024-04-30,South East,Retail,Active,0.457,True,500
+10469,2024-06-13,North West,SME,Churned,0.209,True,2000
+10470,2023-02-22,Scotland,Retail,Churned,0.754,True,500
+10471,2024-04-10,London,Retail,Active,0.743,True,2000
+10472,2024-05-31,NI,Retail,Active,0.626,True,500
+10473,2024-08-24,North West,Retail,Active,0.509,True,2000
+10474,2023-08-10,South East,Retail,Active,0.833,True,1000
+10475,2024-09-05,Scotland,Retail,Active,0.26,True,1000
+10476,2023-08-12,London,Retail,Active,0.613,True,2000
+10477,2024-07-24,London,Retail,Active,0.685,True,2000
+10478,2024-05-30,London,Retail,Active,0.491,True,500
+10479,2024-03-29,Midlands,Retail,Active,0.346,True,500
+10480,2023-09-06,London,SME,Active,0.341,True,10000
+10481,2023-03-04,South East,Retail,Churned,0.282,True,1000
+10482,2023-01-01,London,Retail,Active,0.309,True,5000
+10483,2024-05-05,North West,SME,Active,0.46,True,2000
+10484,2023-12-31,London,SME,Active,0.177,True,2000
+10485,2023-05-01,Scotland,SME,Active,0.645,True,500
+10486,2023-03-21,Wales,Retail,Churned,0.337,True,1000
+10487,2024-03-20,South East,Retail,Active,0.633,True,2000
+10488,2023-04-11,South East,Retail,Active,0.562,True,1000
+10489,2023-02-14,North West,Retail,Active,0.166,True,2000
+10490,2024-08-31,Midlands,Retail,Active,0.376,True,5000
+10491,2023-04-27,London,Retail,Active,0.277,True,5000
+10492,2024-07-21,Midlands,Retail,Churned,0.581,True,500
+10493,2024-04-25,Scotland,Retail,Churned,0.721,True,5000
+10494,2023-11-28,Scotland,Retail,Active,0.082,True,2000
+10495,2023-08-24,South East,SME,Active,0.543,True,500
+10496,2023-07-13,Scotland,Retail,Active,0.447,True,2000
+10497,2023-12-19,North West,Retail,Active,0.829,True,1000
+10498,2024-01-26,London,Retail,Active,0.071,True,1000
+10499,2023-11-01,South East,SME,Active,0.621,True,1000
+10500,2024-01-23,North West,Retail,Active,0.554,True,1000
