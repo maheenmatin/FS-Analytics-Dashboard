@@ -42,23 +42,20 @@ DIVIDE ( [Total Revenue], [Total Orders] )
 // ---------------------------
 // Health & risk KPIs
 // ---------------------------
-Active Customers (30D) = 
-VAR CurrEndInContext =
-    MAXX (
-        FILTER ( VALUES ( 'Date'[Date] ), [Total Transactions] > 0 ),
+Active Customers (30D) :=
+VAR CurrEnd =
+    MAXX(
+        FILTER(ALL('Date'[Date]), 'Date'[Date] <= MAX('Date'[Date]) && [Total Transactions] > 0),
         'Date'[Date]
     )
 RETURN
-COALESCE (
-    CALCULATE (
-        DISTINCTCOUNT ( transactions[customer_id] ),
-        DATESINPERIOD ( 'Date'[Date], CurrEndInContext, -30, DAY )
-    ),
-    0
+CALCULATE(
+    DISTINCTCOUNT(transactions[customer_id]),
+    DATESINPERIOD('Date'[Date], CurrEnd, -30, DAY)
 )
 
 Arrears Amount := CALCULATE(SUM(transactions[net_amount]), transactions[status] = "In Arrears")
-Arrears % (Amount) := DIVIDE([Arrears Amount], [Total Revenue])
+Arrears % := DIVIDE([Arrears Amount], [Total Revenue])
 
 Late Settlement % = 
 VAR TotalTx =
