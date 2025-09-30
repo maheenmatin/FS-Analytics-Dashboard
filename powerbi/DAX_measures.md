@@ -2,22 +2,39 @@
 // Date table
 // ---------------------------
 Date =
-VAR MinDate = DATE ( YEAR ( MIN ( transactions[transaction_date] ) ) - 1, 1, 1 )
-VAR MaxDate = DATE ( YEAR ( MAX ( transactions[transaction_date] ) ) + 1, 12, 31 )
+VAR MinTx  = MIN ( transactions[transaction_date] )
+VAR MinSet = MIN ( transactions[settled_date] )
+VAR MaxTx  = MAX ( transactions[transaction_date] )
+VAR MaxSet = MAX ( transactions[settled_date] )
+VAR MinDate = DATE ( YEAR ( MIN ( MinTx, MinSet ) ) - 1, 1, 1 )
+VAR MaxDate = DATE ( YEAR ( MAX ( MaxTx, MaxSet ) ) + 1, 12, 31 )
 RETURN
 ADDCOLUMNS (
     CALENDAR ( MinDate, MaxDate ),
     "Year", YEAR ( [Date] ),
     "Month", FORMAT ( [Date], "MMM" ),
     "Month Number", MONTH ( [Date] ),
-    "Year-Month", FORMAT ( [Date], "YYYY-MM" ),
-    "Quarter", "Q" & FORMAT ( [Date], "Q" ),
-    // UK fiscal year starting April
+    "YearMonthNumber", YEAR([Date]) * 100 + MONTH([Date]),
+    "Year-Month", FORMAT ( [Date], "yyyy-MM" ),
+    "Quarter", "Q" & QUARTER ( [Date] ),
     "Fiscal Year", YEAR ( EDATE ( [Date], -3 ) ),
-    "Fiscal Quarter", "Q" & FORMAT ( EDATE ( [Date], -3 ), "Q" ),
+    "Fiscal Quarter", "Q" & QUARTER ( EDATE ( [Date], -3 ) ),
     "EndOfMonth", EOMONTH ( [Date], 0 ),
     "Week (ISO)", WEEKNUM ( [Date], 21 )
 )
+
+
+// ---------------------------
+// New columns for transactions table
+// ---------------------------
+// Days from transaction to settlement (blank if not settled)
+Days to Settle =
+VAR s = transactions[settled_date]
+RETURN IF( ISBLANK(s), BLANK(), DATEDIFF( transactions[transaction_date], s, DAY ) )
+
+// Show days only for late rows (cleaner for triage)
+Days Late =
+IF( transactions[late_settlement] = TRUE(), [Days to Settle], BLANK() )
 
 
 // ---------------------------
@@ -55,7 +72,7 @@ CALCULATE(
 )
 
 Arrears Amount := CALCULATE(SUM(transactions[net_amount]), transactions[status] = "In Arrears")
-Arrears % := DIVIDE([Arrears Amount], [Total Revenue])
+Arrears % (Amount) = DIVIDE([Arrears Amount], [Total Revenue])
 
 Late Settlement % = 
 VAR TotalTx =
