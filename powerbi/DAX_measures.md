@@ -57,13 +57,8 @@ COALESCE (
     0
 )
 
-Arrears % = 
-VAR TotalTx =
-    COUNTROWS ( transactions )
-VAR ArrearsTx =
-    CALCULATE ( COUNTROWS ( transactions ), transactions[status] = "In Arrears" )
-RETURN
-    DIVIDE ( ArrearsTx, TotalTx )
+Arrears Amount := CALCULATE(SUM(transactions[net_amount]), transactions[status] = "In Arrears")
+Arrears % (Amount) := DIVIDE([Arrears Amount], [Total Revenue])
 
 Late Settlement % = 
 VAR TotalTx =
@@ -138,7 +133,6 @@ MAXX (
     'Date'[EndOfMonth]
 )
 
-// Axis-aware, clamped snapshot (works for both a line point and a card)
 Cohort Retention (30D) - EOM Snapshot :=
 VAR LatestEOM = [Latest EOM With Data]
 VAR AxisEOM   = MAX ( 'Date'[EndOfMonth] )
@@ -197,27 +191,3 @@ Late Settlement % (by Settled Date) - Clamped =
 VAR LatestEOM = [Latest Settled EOM With Data]
 VAR ThisEOM   = MAX ( 'Date'[EndOfMonth] )
 RETURN IF ( ThisEOM > LatestEOM, BLANK(), [Late Settlement % (by Settled Date)] )
-
-Cohort Retention (30D) - EOM Snapshot = 
-VAR LatestEOM = [Latest EOM With Data]
-VAR AxisEOM   = MAX ( 'Date'[EndOfMonth] )
-VAR ThisEOM   =
-    IF ( ISBLANK ( AxisEOM ) || AxisEOM > LatestEOM, LatestEOM, AxisEOM )
-RETURN
-IF (
-    ISBLANK ( LatestEOM ),
-    BLANK(),
-    VAR CurrEnd =
-        MAXX (
-            FILTER (
-                ALL ( 'Date'[Date] ),
-                'Date'[Date] <= ThisEOM && [Total Transactions] > 0
-            ),
-            'Date'[Date]
-        )
-    VAR PrevWindow = DATESBETWEEN ( 'Date'[Date], CurrEnd - 60, CurrEnd - 31 )
-    VAR CurrWindow = DATESBETWEEN ( 'Date'[Date], CurrEnd - 30, CurrEnd )
-    VAR C1 = CALCULATETABLE ( VALUES ( transactions[customer_id] ), PrevWindow )
-    VAR C2 = CALCULATETABLE ( VALUES ( transactions[customer_id] ), CurrWindow )
-    RETURN DIVIDE ( COUNTROWS ( INTERSECT ( C1, C2 ) ), COUNTROWS ( C1 ) )
-)
