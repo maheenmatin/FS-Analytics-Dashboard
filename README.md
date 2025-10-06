@@ -43,6 +43,9 @@ Leaders need a fast read on revenue health, customer activity, and cash risk (la
 ![Retention & Trends](images/risk&retention.jpg)
 ![Tables](images/tables.jpg)
 
+## See also
+Two-page consulting report in `slides/consulting-report.pdf`. Contains KPI overview, breakdowns, insights, actions and definitions.
+
 ## Data
 Synthetic sample data can be used to demo structure; replace with your live source as needed.
 
